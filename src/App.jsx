@@ -1,11 +1,13 @@
 import { NavLink, Routes, Route } from 'react-router-dom';
 import DashboardPage from './pages/DashboardPage.jsx';
 import ProjectsPage from './pages/ProjectsPage.jsx';
+import ContactPage from './pages/ContactPage.jsx';
 import './App.css';
 
 const navLinks = [
   { to: '/', label: 'Dashboard' },
-  { to: '/projects', label: 'Projects' }
+  { to: '/projects', label: 'Projects' },
+  { to: '/contact', label: 'Contact' }
 ];
 
 export default function App() {
@@ -36,6 +38,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<DashboardPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
       <footer className="app-footer">
